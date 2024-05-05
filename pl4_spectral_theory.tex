@@ -18,12 +18,12 @@
 
 
 
-\section{1}
-\subsection*{1}
+\section{}
+\subsection*{(1)}
 Take $v$ in the ideal I, by polar decomposition we have $v=u|v|$, with $|v|$ positive, we can write $|v|=u^* v$, this implies $|v|=|v|^\ast \in I$, therefore 
 $v^\ast=|v|^\ast u^*\in I$.
 
-\subsection*{2}
+\subsection*{(2)}
 
 Let $I=\{fz|f\in C(\mathbb{Z})\}$ where $z$ is the identity on $\mathbb{D}$. We prove that $z^\ast$ that does $\mapsto \overline{z}$ is not in $I$. Suppose 
 there is $f\in I$ with $fz=z^\ast$, for $x\in \mathbb{R}$ we have $f(x)x=x$ therefore $f(x)=1$, and $f(ix)(ix)=-ix$ and $f(ix)=-1$, taking $x\to 0$ we see that $f$ is 
@@ -31,7 +31,22 @@ not continuous at $0$, a contradiction. Therefore the ideal is not self adjoint.
 
 
 
-\section{2}
+\section{}
+
+
+\section*{5}
+
+ \quad\quad   Suppose $p,q$ are Murray-von Neumann equivalent, with $p=vv^\ast$, $q=v^\ast v$. Let $v=u|v|$ be the polar
+decomposition of $v$, with $u$ unitary and $|v|$ self adjoint. We have $p=p^2=u|v|^2u^\ast$ 
+and $q=|v|u\ast u |v|=|v|^2$
+clearly $p=uqu^\ast$.
+
+Now suppose $p,q$, $1-p,1-q$ are unitarlly equivalent. Say $1-p=u(1-q)u^\ast=uu^\ast -uqu^\ast$, we have
+$p=uqu^\ast$ so we can suppose these pairs are conjugated by the same unitary transformation. 
+Let's calculate $p=p^2=(uqu^\ast)(uqu^\ast)=(uq)(qu^\ast)=(uq)(uq)^\ast $, take $v=uq$. we have $p=vv^\ast$
+and $v^\ast v= qu^\ast u q=q$, therefore they are Murray-von Neumann equivalent.
+
+
 
 
 \end{document}
