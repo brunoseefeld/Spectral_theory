@@ -47,7 +47,26 @@ Let's calculate $p=p^2=(uqu^\ast)(uqu^\ast)=(uq)(qu^\ast)=(uq)(uq)^\ast $, take 
 and $v^\ast v= qu^\ast u q=q$, therefore they are Murray-von Neumann equivalent.
 
 
+\section*{6}
 
+Suppose $p,q$ are Murray-von Neumann equivalent, we have $p=uqu^\ast$ for $u$ unitary. Take $x\in\text{Range}(p)$, then $px=x$,
+we have $u^\ast(x)=qu^\ast(x)$ so $u^\ast(x)\in \text{Range}(q)$, now take $y\in \text{Range}(q)$ 
+$uy=uqy=puy$ having $y=u^\ast(puy)$, with all this we get $\text{Range}(q)=u^\ast \text{Range}p$.
+By reversing the roles of $q$ and $p$ and $u$ and $u^\ast$ we have $\text{Range}p=
+u\text{Range}q$. By using that $(1-p)=u(1-q)u^\ast$ we also have that $\text{Null} (p)=q\text{Null}(q)$
+and $\text{Null}(q)=u^\ast\text{Null}(p)$. 
+
+
+Now suppose $\text{Range}(p)=u\text{Range}(q)$ and $\text{Range}(q)=u^\ast \text{Range}(p)$ 
+and $\text{Null}(p)=u\text{Null}(q)$, $\text{Null}(q)=u^\ast\text{Null}{p}$.
+Take $x\in H$, we know from the above that $u^\ast px=qy$ for some $y$. We also know 
+$qu^\ast(1-p)x=0$, then $qu^\ast x=qu^\ast px=qqy=qy$ therefore $u^\ast px=qu^\ast x$ and they 
+are Murray-von Neumann equivalent.
+
+
+So we have the following characterization of Murray-von Neumann equivalence: $p,q$ are 
+Murray-von Neumann equivalent if and only if $\text{Range}(p)=u\text{Range}(q)$ and $\text{Range}(q)=u^\ast \text{Range}(p)$ 
+and $\text{Null}(p)=u\text{Null}(q)$, $\text{Null}(q)=u^\ast\text{Null}(p)$.
 
 \end{document}
 

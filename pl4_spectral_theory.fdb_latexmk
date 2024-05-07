@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1714867493 "c:/Users/bruno/Documents/2024_1/spectral_theory/pl4_spectral_theory.tex" "pl4_spectral_theory.pdf" "pl4_spectral_theory" 1714867495 0
-  "c:/Users/bruno/Documents/2024_1/spectral_theory/pl4_spectral_theory.tex" 1714867489 1651 6d792ae314e49ca41a6de8a84547bee6 ""
+["pdflatex"] 1715084607 "c:/Users/bruno/Documents/2024_1/spectral_theory/pl4_spectral_theory.tex" "pl4_spectral_theory.pdf" "pl4_spectral_theory" 1715084609 0
+  "c:/Users/bruno/Documents/2024_1/spectral_theory/pl4_spectral_theory.tex" 1715084606 2921 87c440c1bbb6722fbb6ae12e590b06e7 ""
   "c:/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1679339155 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1679336631 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1679336631 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -55,8 +55,8 @@
   "c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1679344756 4662804 131178ccc9b2f4741a821427ce79dce1 ""
   "c:/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1679344861 7883448 96fc5d3320b1c119d24d661cdd5d4110 ""
   "c:/texlive/2022/texmf.cnf" 1679344725 713 e69b156964470283e0530f5060668171 ""
-  "pl4_spectral_theory.aux" 1714867494 208 b7d25ffd7c6a90abbaaabffbc9d05d0b "pdflatex"
-  "pl4_spectral_theory.tex" 1714867489 1651 6d792ae314e49ca41a6de8a84547bee6 ""
+  "pl4_spectral_theory.aux" 1715084609 208 e642ca28ccf302bb9f14e029468b6c05 "pdflatex"
+  "pl4_spectral_theory.tex" 1715084606 2921 87c440c1bbb6722fbb6ae12e590b06e7 ""
   (generated)
   "pl4_spectral_theory.aux"
   "pl4_spectral_theory.log"
