@@ -68,6 +68,21 @@ So we have the following characterization of Murray-von Neumann equivalence: $p,
 Murray-von Neumann equivalent if and only if $\text{Range}(p)=u\text{Range}(q)$ and $\text{Range}(q)=u^\ast \text{Range}(p)$ 
 and $\text{Null}(p)=u\text{Null}(q)$, $\text{Null}(q)=u^\ast\text{Null}(p)$.
 
+
+
+\section*{9}
+\subsection*{1}
+Suppose $p$ and $q$ are homotopoic. Then there is a continuous $\Phi:[0,1]\to A$ with $\Phi(0)=p$
+$\Phi(1)=q$ and $\Phi(t)$ a projection for all $t$. For every $t\in [0,1]$, we can find $\delta_t$
+such that $\|\phi(t)-\phi(t')\|<1$ for $|t'-t|<\delta_t$. Since the interval is compact
+we can cover it with a finite number of intervals of the form $(t-\delta_t,t+\delta_t)$. 
+Say $\{I_i\}_{i=1}^{N}$ is such a finite collection of intervals, by taking smaller $\delta_t$
+we can make an arbitrary $x\in [0,1]$ intersect at most $2$ of those intervals. Also by
+changing their names if necessary we can have $t_{i+1}>t_i$|. So $p=\Phi(0)\in I_1$, hence
+$p$ is unitarlly equivalent to everyone in $I_1$, take a point $x\in I_1\cap I_2$, we have 
+that $\Phi(x)$ is unitarily equivalent to everyone in $\Phi(I_2)$, by transitivity $p$ is 
+unitarily equivalent $\Phi(I_2)$. By continuing with taking points in the intersections 
+$I_i\cap I_{i+1}$ we have that $p$ and $q$ are unitarily equivalent.  
 \end{document}
 
 
