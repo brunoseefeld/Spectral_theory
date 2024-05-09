@@ -71,7 +71,7 @@ and $\text{Null}(p)=u\text{Null}(q)$, $\text{Null}(q)=u^\ast\text{Null}(p)$.
 
 
 \section*{9}
-\subsection*{1}
+\subsection*{1)}
 Suppose $p$ and $q$ are homotopoic. Then there is a continuous $\Phi:[0,1]\to A$ with $\Phi(0)=p$
 $\Phi(1)=q$ and $\Phi(t)$ a projection for all $t$. For every $t\in [0,1]$, we can find $\delta_t$
 such that $\|\phi(t)-\phi(t')\|<1$ for $|t'-t|<\delta_t$. Since the interval is compact
@@ -83,6 +83,15 @@ $p$ is unitarlly equivalent to everyone in $I_1$, take a point $x\in I_1\cap I_2
 that $\Phi(x)$ is unitarily equivalent to everyone in $\Phi(I_2)$, by transitivity $p$ is 
 unitarily equivalent $\Phi(I_2)$. By continuing with taking points in the intersections 
 $I_i\cap I_{i+1}$ we have that $p$ and $q$ are unitarily equivalent.  
+
+\subsection*{2)}
+
+We know that if $\|p-q\|<1$ then they are unitarily equivalence, there is, $p=uqu^\ast$ for 
+some unitary $u$, write $u=e^{ia}$ for some self adjoint $a$. Take $\Phi=e^{ita}qe^{-ita}$.
+For $t=0$ we have $\Phi(t)=q$ and $\Phi(1)=p$, also $\Phi(t)^2=e^{ita}qe^{-ita}e^{ita}qe^{-ita}=
+e^{ita}qe^{-ita}=\Phi(t)$. We only need to show $\Phi$ is continuous: since the exponential
+map is continuous, multiplication by $q$ is continuous, continuity of $\Phi$ follows. 
+We have $p$ and $q$ homotopic.
 \end{document}
 
 
