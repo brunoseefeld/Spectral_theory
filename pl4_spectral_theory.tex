@@ -2,6 +2,7 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage[]{dsfont}
 
 
 
@@ -62,6 +63,25 @@ the previous result we have Null$(u-\lambda)\neq 0$ and $\lambda$ is an eigenval
 
 
 For completness let's prove that Null$(f(u))=\text{Range}(E(f^{-1}(0)))$. 
+
+Take a continuous $f:\sigma(u)\to \mathbb{C}$ and let $\omega=f^{-1}(0)$. 
+We have $f(z)\mathds{1}_{\omega}=0$ and by the exended functional calculus we 
+have $f(u)E(\omega)=0$, then if $x\in\text{Range}E(\omega)$, $f(u)E(\omega)x=
+f(u)x=0$, there is, $x\in\text{Null}(f(u))$. 
+
+Now let $\omega_n=\{z\in \sigma(u)|\frac{1}{n+1}\leq|f(z)|< \frac{1}{n}\}$
+and \[f_n(z)=
+\begin{cases}
+    \frac{1}{f(z)} & \text{if}\quad z\in \omega_n \\
+    0 & \quad \text{otherwise}
+\end{cases}\]
+
+with this we get $f_n(z)f(z)=\mathds{1}_{\omega_n}$. Since $\sigma\setminus
+\omega=\sqcup_{n=1}^{\infty}\omega_n$ and $E$ is countably additive we have
+$E(\omega)+\sum_n E(\omega_n)=I$, so if $x\in \text{Null}f(u)$, $E(\omega_n)x
+=0$, hence $E(\omega)x=x$, so that $x\in \text{Range}(E(\omega))$
+
+
 
 
 
