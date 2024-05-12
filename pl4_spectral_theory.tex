@@ -79,7 +79,7 @@ and \[f_n(z)=
 with this we get $f_n(z)f(z)=\mathds{1}_{\omega_n}$. Since $\sigma\setminus
 \omega=\sqcup_{n=1}^{\infty}\omega_n$ and $E$ is countably additive we have
 $E(\omega)+\sum_n E(\omega_n)=I$, so if $x\in \text{Null}f(u)$, $E(\omega_n)x
-=0$, hence $E(\omega)x=x$, so that $x\in \text{Range}(E(\omega))$
+=0$, hence $E(\omega)x=x$, so that $x\in \text{Range}(E(\omega))$.
 
 
 
@@ -123,6 +123,23 @@ Murray-von Neumann equivalent if and only if $\text{Range}(p)=u\text{Range}(q)$ 
 and $\text{Null}(p)=u\text{Null}(q)$, $\text{Null}(q)=u^\ast\text{Null}(p)$.
 
 
+\section*{7}
+Take $\epsilon<\frac{1}{2}$. Define $x=pq+(1-p)(1-q)$. We have 
+\[  
+\|x-1\|=\|p(p-q)+(q-p)q\|<2\|p-q\|<1    
+\]
+
+So that $x$ is invertible. Take $x=uz$ the polar decomposition of $x$, we have
+that $z$ is also invertible and $z^{-1}=u^\ast x$. By opening up the terms
+that define $x$ we have $px=xq=pq$ and $qx^\ast x=qpq$, also $x^\ast x q=qpq$,
+then we have $qz^2=z^2q$, but since $q^2=q$, $qz=zq$, finally:
+
+\[pu=pxz^{-1}=xqz^{-1}=uzqz^{-1}=uqzz^{-1}=uq\]
+
+then $u$ and $q$ are unitarily equaivalent. 
+
+
+
 
 \section*{9}
 \subsection*{1)}
@@ -146,6 +163,14 @@ For $t=0$ we have $\Phi(t)=q$ and $\Phi(1)=p$, also $\Phi(t)^2=e^{ita}qe^{-ita}e
 e^{ita}qe^{-ita}=\Phi(t)$. We only need to show $\Phi$ is continuous: since the exponential
 map is continuous, multiplication by $q$ is continuous, continuity of $\Phi$ follows. 
 We have $p$ and $q$ homotopic.
+
+
+\subsection*{3}
+
+Take $A=M_3(\mathbb{C})$ and $p(x,y,z)=(x,y,0)$ and $q(z,y,z)=(0,0,z)$.
+If they were homotopic, they would be unitarily equivalent by item 1, but
+then $\text{Range} p=u \text{Range } q$, which implies $p$ and $q$ have the 
+same rank, a contradiction, therefore they are not homotopic.
 \end{document}
 
 
