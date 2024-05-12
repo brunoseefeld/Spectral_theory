@@ -31,7 +31,41 @@ not continuous at $0$, a contradiction. Therefore the ideal is not self adjoint.
 
 
 
-\section{}
+\section*{3}
+\subsection*{1}
+Suppose $\sigma(u)$ has only one point $\alpha\in \mathbb{C}$. Then by the spectral theorem we have 
+$u=\int z dE=\alpha I$, since the dimension is bigger than 1, we can find
+a non trivial closed subspace $V$ and $uV=\alpha I V=V$.
+If $\sigma(u)$ contains more than one point we take two non-empty disjoint Borel subsets 
+$\omega,\omega'$ of $\sigma(u)$ and consider $E(\omega),E(\omega')$, we have
+that $uE(\omega)=E(\omega)u$ because if $v$ commutes with $u$ and $u*$
+then $v$ commutes with $f(u)$ for $f\in B_{\infty}(\sigma(u))$. Let $M=\text
+{Range} E(\omega), M'=\text
+{Range} E(\omega')$, if $x\in M$, $uE(\omega)x=ux=E(\omega)ux$, therefore $M$
+is invariant by $u$. If $x\in M$, since $E(\omega\cap\omega')=E(\omega)E(\omega')=0$
+$E(\omega')x=0$, therefore $x\in (M')^\perp$, if $y\in (M')^\perp$, then
+$y=E(\omega')y+E(\omega)y=E(\omega)y$, so that $y\in M$, hence $M=(M')^\perp$. 
+So $M$ is a non trivial closed invariant vector subspace.
+
+\subsection*{2}
+
+We start proving the following: for $\lambda\in \sigma(u)$, Null$(u-\lambda)=
+\text{Range}(E(\{\lambda\}))$. 
+
+To prove this recall that for $f\in C(\sigma(u))$, Null$(f(u))=\text{Range}
+E(f^{-1}(0))$, consider $f(z)=z-\lambda$, we have Null$(u-\lambda)=\text{Range}
+(\{\lambda\})$. 
+
+Now, since the spectral measure is regular and $\lambda$ is an isolated point, 
+$\{\lambda\}$ is an open set, therefore $E(\{\lambda\})\neq 0$, therefore by
+the previous result we have Null$(u-\lambda)\neq 0$ and $\lambda$ is an eigenvalue.
+
+
+For completness let's prove that Null$(f(u))=\text{Range}(E(f^{-1}(0)))$. 
+
+
+
+
 
 
 \section*{5}
