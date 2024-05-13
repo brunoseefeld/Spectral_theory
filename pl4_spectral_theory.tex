@@ -19,7 +19,7 @@
 
 
 
-\section{}
+\section*{1}
 \subsection*{(1)}
 Take $v$ in the ideal I, by polar decomposition we have $v=u|v|$, with $|v|$ positive, we can write $|v|=u^* v$, this implies $|v|=|v|^\ast \in I$, therefore 
 $v^\ast=|v|^\ast u^*\in I$.
@@ -29,6 +29,79 @@ $v^\ast=|v|^\ast u^*\in I$.
 Let $I=\{fz|f\in C(\mathbb{Z})\}$ where $z$ is the identity on $\mathbb{D}$. We prove that $z^\ast$ that does $\mapsto \overline{z}$ is not in $I$. Suppose 
 there is $f\in I$ with $fz=z^\ast$, for $x\in \mathbb{R}$ we have $f(x)x=x$ therefore $f(x)=1$, and $f(ix)(ix)=-ix$ and $f(ix)=-1$, taking $x\to 0$ we see that $f$ is 
 not continuous at $0$, a contradiction. Therefore the ideal is not self adjoint.  
+
+
+\section*{2}
+\subsection*{1)}
+The fact that this is an algebra follows from the fact that $\ell_\infty$ and
+$\mathcal{K}(\ell_2)$ are algebras. The same goes for it being a $*$-algebra.
+It has the $C^*$ property becauase $\|(a+k)*(a+k)\|=\|a+k\|^2$, just consider
+the fact that $a+k\in B(\ell_2)$ and this is a $C^\ast$-algebra.
+We only need to show that it's Banach. But a Cauchy sequence in $\ell_\infty+
+\mathcal{K}(\ell_2)$ is a Cauchy sequence in $B(\ell_2)$, a Banach space, so 
+it converges, we only need to show that the limit is in $\ell_\infty+
+\mathcal{K}(\ell_2)$.
+
+
+Take $(y_n)_\subset \ell_\infty + \mathcal{K}(\ell_2)$ a sequence converginc
+to $y\in B(\ell_2)$. Define 
+by
+
+\begin{align*}
+    T:B(\ell_2)\to & \ell_\infty \subset B(\ell_2) \\
+    Ta(n)=\langle ae_n,e_n  \rangle 
+\end{align*}
+
+clearly $Tx=x$ for $x\in \ell_\infty$. Routine arguments show
+that $T$ is linear, we have:
+
+\begin{equation}
+    \|T\|=\sup_{\|b\|\leq 1} \|Tb\|_\infty=\sup_{\|b\|\leq 1} |\langle
+        be_n,e_n
+    \rangle|\leq \|b\|=1
+\end{equation}
+ so it's also continuous.
+
+ Now $y_n=a_n+ b_n\to_n y$. Writing $y=\Phi(y)-(\Phi(y)-y)$, in order to show
+ that $y\in  \ell_\infty+ \mathcal{K}(\ell_2)$ we need to show 
+$\Phi(y)-y$ is compact, but
+
+\begin{equation}
+    \Phi(y)-y=\lim_{n} \Phi(a_n)+\Phi(b_n)-a_n-b_n=\lim_n \Phi(b_n)-b_n
+\end{equation}
+
+since $b_n$ is compact we need to show $\Phi(b_n)$ is compact, equivalently,
+show that $\langle b_n e_k,e_k \rangle\to_k 0 $. This follows considering by 
+taking a sequence $c_k\to_k b_n$ of finite rank operators and considering that
+each $c_k$ is a linear combination of rank one projections, for a rank one
+projection $\alpha$, $\lim_k \langle \alpha e_k,e)k \rangle =0$. Hence $\Phi(b_n)$
+is compact and $\ell_\infty + \mathcal{K}(\ell_2)$. 
+\subsection*{2)}
+We prove first that the image of a rank 1 projection is taken to a rank 
+1 projection. For this we use that if $p,q$ are projections such that 
+$q\leq p$, than the following holds:
+
+\begin{align*}
+    pq=qp&=q\\
+    q(\ell_2)\subseteq & p(\ell_2)
+\end{align*}
+
+so rank 1 projections are minimal with respect to the partial order $\leq$.
+Let $p$ be a rank 1 projection and suppose by contradiction that $\Phi(p)$ 
+is not minimal, then there exists a projection $q$ with $q\leq \Phi(p)$ and
+$q\neq \Phi(p)$. We know by minimality that $\Phi(p)q=q$, so $p\Phi^{-1}(q)=
+\Phi^{-1}(q)$, therefore $p=\Phi^{-1}(q)$ and $\Phi(p)=q$, a contradiction.
+
+Since $\mathcal{F}(\ell_2)$ is spanned by rank 1 projections, 
+$\Phi(\mathcal{F}(\ell_2))\subseteq \mathcal{F}(\ell_2) $, the inverse
+inequality is obtained by the same argument for $\Phi^{-1}$. 
+Since $\Phi$ is continuous and $\mathcal{F}(\ell_2)$ is dense in $\mathcal{K}
+(\ell_2)$, we have $\Phi(\mathcal{K}
+(\ell_2))=\Phi(\overline{\mathcal{F}(\ell_2)})=\overline{\Phi(\mathcal{F}(\ell_2))}
+\subseteq \mathcal{K}
+(\ell_2)$. We get equality by applying the same thing for $\Phi^{-1}$, which
+is also continuous. 
+
 
 
 
