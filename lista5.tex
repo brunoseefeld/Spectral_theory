@@ -60,6 +60,31 @@ the commutation in the equality on the first line because $-ith,-ish$ commute.
 \subsection*{2)}
 
 
+No. Take for example $H=\ell_2(\mathbb{N})$ and $h$ the self-adjoint unbounded
+operator given by $h(a_n)_n=(h_n a_n)_n$ where $(h_n)_n\subset \mathbb{R}$
+is an anbounded sequence and $(a_n)_n\in \text{dom} h$.
+By functional calculus provided by the spectral measure of $h$ we have 
+$e^{ith}(a_n)_n=(e^{ith_n}a_n)_n$. Since the sequence is unbounded, we can find
+for each $k\in \mathbb{N}$ a $n_k$ such that $|h_{n_k}-h_k|>k$. Let $E_nm$ be 
+the rank one operaor that does only this $E_nm (e_n)=e_m$. 
+
+We can write $e^{ith}=\sum_{k}e^{ith_k}E_{kk}$.  Define $a=\sum_k E_{k n_k}$,
+for $x=\sum_k x_k e_k$, $\langle (I-a^\ast a x),x\rangle =\|x-\sum_{n_k} x_{n_k}e_{n_k}\|^2 \geq 0 $,
+so $a^\ast a \leq I$ and $a\in B(H)$. 
+
+Let's use all this to compute $\| e^{ith}ae^{-ith}-a      \|$:
+
+\begin{align*}
+    \| e^{ith}ae^{-ith}-a      \|=&\|e^{ith}\sum _k e^{-ith_k}E_{k n_k}-a  \|=\\
+    \|\sum_k (e^{it(h_{n_k}-h_k)}-1)E_{k n_k} \|\geq & \sup_k |e^{it(h_{n_k}-h_k)}-1|
+\end{align*}
+
+take a sequence $t_k=\frac{\pi}{h_{n_k}-h_k}$, by our choice of $h_{n_k}$ 
+we have $\lim_k t_k=0$ but the norm is bounded below by 2, so we don't have
+strong continuity in this sense.
+
+
+
 
 
 \section*{Problem 4}
@@ -77,6 +102,8 @@ it's given by
 \end{align}
 when calculated at $t=0$ we have $iha-iah$, so $i[h,a]$ is a bounded operator 
 in $\text{dom} h$.
+
+
 
 
 
