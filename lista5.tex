@@ -1,0 +1,89 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[]{dsfont}
+
+
+
+
+\title{Problem set 5 Spectral Theory}
+\author{Bruno Seefeld}
+\date{May 2024}
+
+\begin{document}
+
+\maketitle
+
+
+\section*{Problem 1}
+
+First we have that $\sigma(uau^\ast)=\sigma(u^\ast ua)=\sigma(a)$.
+
+Notice that $(uau^\ast)^n=ua^nu^\ast$, this implies that for a polynomial 
+$p$, $p(uau^\ast)=up(a)^\ast$. So we have, for $x,y\in H$
+\begin{align}
+    \langle up(a)u^\ast x,y \rangle=&\langle p(uau^\ast )x,y \rangle\\
+    \int_{\sigma(a)}p(z) dE_{u^\ast x^\ast y}=&\int_{\sigma(a)}p(z) dE'_{x,y}  
+\end{align}
+
+where $E,E'$ are the measures corresponding to $uau^\ast, a$ respectively.
+
+Take a sequence of polynomials $p_n(z)$ converging pointwise to $e^{iz}$, we
+have by dominated convergence theorem that 
+
+\begin{equation}
+    \int_{\sigma(a)} \lim p_n(z) dE_{u^\ast x^\ast y}=\int_{\sigma(a)}\lim p_n(z) dE'_{x,y} 
+\end{equation}
+which implies $\langle e^{iuau^\ast}x, y\rangle =\langle ue^{ia}u^\ast,y\rangle$ 
+for all $x,y\in H$.
+This of course making the possibly dangerous asasumption that $e^{it}$ is integrable,
+it's certainly bounded since $\sigma(a)\subset \mathbb{R}$.
+
+
+
+
+\section*{Problem 3}
+
+\subsection*{1)}
+
+Let $t,s\in \mathbb{R}$
+
+\begin{align*}
+    \sigma_{t+s}(a)=e^{i(t+s)h}ae^{-(t+s)h}=& e^{ith}e^{ish}ae^{-ith}e^{-ish}\\
+    =e^{ith}e^{ish}ae^{-ish}e^{-ith}=&\sigma_{t}(\sigma_s (a))
+\end{align*}
+
+the commutation in the equality on the first line because $-ith,-ish$ commute.
+
+
+\subsection*{2)}
+
+
+
+
+\section*{Problem 4}
+
+Proving $(3)\iff (2)$, by $a\text{dom} h\subseteq \text{dom}(h) $ we can write 
+$i\langle ax, hy\rangle-i\langle ahx, y\rangle=-\langle hax,y\rangle 
+-i\langle ahx,y\rangle =\langle i[h,a]x,y\rangle$ so the sesquilinear form
+is bounded iff $i[h,a]$ is.
+
+Proving $(1)\implies (3)$:
+suppose the derivative exists as a bounded operator in it's domain, then 
+it's given by 
+\begin{align}
+    \frac{d}{dt} e^{ith}ae^{-ith}=ihe^{ith}ae^{-ith}-ie^{ith}ahe^{-ith}
+\end{align}
+when calculated at $t=0$ we have $iha-iah$, so $i[h,a]$ is a bounded operator 
+in $\text{dom} h$.
+
+
+
+
+
+
+
+
+\end{document}
+
