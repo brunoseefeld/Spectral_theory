@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[]{dsfont}
+
+
+
+
+\title{Problems in hyperbolic dynamics}
+\author{Bruno Seefeld}
+\date{June 2024}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Some problems that I'm strugling with
+
+\end{abstract}
+
+\section{}
+If $\Lambda$ is an isolated hyperbolic set and $f_\Lambda $ is a transitive diffeomorphism, then $\overline{\text{Per}(f_\Lambda)}=\Lambda$. 
+The $\Lambda\subseteq \overline{\text{Per}(f_{|\Lambda)}} $ follows from Anosov closing lemma. The other direction seems to follow from the fact that $\Lambda$ is closed.
+
+
+
+Proof of the second part: 
+
+Let $V$ be the neighborhood from the isolation of $\Lambda$. Suppose $x$ is 
+accumulating periodic points of $f_{|\Lambda}$ and it's not in $\Lambda$. 
+Then ther is $n\in \mathbb{Z}$ such that $x\notin f^n (V)$. We can, by 
+reducing $V$ if necessary, assume $x\notin \overline{f^n(V)}$. Since this
+set is open we have an $r>0$ such that $B(f^{n}x,r)\subset \overline{f^n(V)} $.
+By the uniform continuity of $f$, we can take $\delta$ such that $d(u,v)<\delta$
+implies $d(f^{-n}(u), f^{-n}v)<r$. Find $p_k$ periodic point $\delta$ close to 
+$x$, we have that $f^{-n}(p_k)\notin f^{n}(\Lambda)$, a contradiction because
+$\Lambda$ is isolated.
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
