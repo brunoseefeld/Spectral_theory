@@ -99,7 +99,44 @@ Let's assume by contradiction that there exists a positive functional
 
  \section*{7)}
 
- 
+ If $A$ has an approximate unity $(u_n)_n$ define $a=\sum_{i=0}^\infty 
+ \frac{u_n}{2^n}$. Let $\phi$ be a positive functional, we can normalize if 
+ needed and consider it a state. We have $\|\phi\|=1=\lim_n \phi (u_n)$,
+ therefore after some $n_0$, $\phi(u_n)>0$, this implies $\phi(a)>0$, therefore
+ a is a strictly positive element. Note: this is an equivallent definition
+ of stricly positive, for completedness we prove it at the end.
+
+ Suppos $a$ is a strictly positive element. We claim that $Aa$ is dense in A.
+ In fact, suppose it is not, then $Aa$ forms a left ideal and there is a 
+ state $\phi$ that vanishes on the closure of $Aa$, hence on $a$, a contradiction
+ since $a$ is strictly positive. Threfore $Aa$ is dense. Now let $f$ be the 
+ image of $a$ by functional calculus, we have that $ff(f+ \frac{1}{n})^{-1}\to f$,
+ therefore $aa(a+\frac{1}{n})^{-1}\to a$. For $b\in A$, there exists by density
+ a $c\in A$ with $\|b-ca\|<\frac{\epsilon}{3}$,
+
+ \begin{align*}
+    &\|b-ba(a+\frac{1}{n})^{-1}\|=  \\ &\|b-ca+ca -caa(a+\frac{1}{n})^{-1}
+    +caa(a+\frac{1}{n})^{-1}-ba(a+\frac{1}{n})^{-1}\|\leq \\
+    &\|b-ca\|+\|ca -caa(a+\frac{1}{n})^{-1}\|+ \|caa(a+\frac{1}{n})^{-1}-ba(a+\frac{1}{n})^{-1} \|\leq \\
+    &\frac{\epsilon}{3}+ \frac{\epsilon}{3} + \|ca-b\|\leq \epsilon 
+ \end{align*}
+
+
+
+ \section*{8)}
+
+ Let $S$ be he right shift on $\ell_2(\mathbb{Z})$, i.e, $S((a_n)_n)=a_{n+1}$.
+ Consider $Y=\{(a_n)_n\in \ell_2(\mathbb{Z})|a_n=0\quad  \forall n>0\}$. This is 
+ a subspace invariant by the shift. Take $e_0$ the canonical basis vector, $e_0\in Y$
+ but $S^{-1}(e_0)= e_1\notin Y$, therefore $S$ is not invertible in $Y$ and
+ $0\in \sigma(S_{|Y})$, but by an exercise on a previous problem set 
+ $\sigma(S)=\mathbb{S}^1$, this implies $\sigma(S_{|Y})\not\subset \sigma(S)$.
+
+
+
+
+
+
 
 
 
