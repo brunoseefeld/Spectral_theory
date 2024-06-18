@@ -1,0 +1,121 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[]{dsfont}
+
+
+
+
+\title{Spectral theory problem set 6}
+\author{Bruno Seefeld}
+\date{June 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{1)}
+
+We start with the following: if $\Phi$ is positive and for every 
+$a\in A^+, \|a\|\leq 1$ we have $\|\phi(a)\|<M$  for some $M\in \mathbb{R}^+$
+then $\|\phi\|\leq 4M$. 
+This follows by writing any $x\in A$ as $x=a_{sa}+ib_{sa}$ for self adjoint 
+$a_{sa},b_{sa}$ and then $a_{sa}=a^+ -a^{-}, b_{sa}=b^+ -b^{-}$, then $x$
+is the linear combination of $4$ positive elements, we have that $\|\phi\|\leq 4M$.
+
+Notice that by the $C^\ast$ equality we can take the sup on the definition of
+the norm of $\phi$ to be over positive elements since $\|a\|^2\leq 1\implies
+\|a^\ast a\|\leq 1$. 
+
+And finally to prove that $\phi$ is bounded, assume by contradiction that 
+it isn't. Then there is a sequence of positive elements $(a_n)_n$ in the 
+unit ball of $A^+$  with $\|\phi(a_n)\|\geq 2^n$. Define $a=\sum_{i=0}^\infty 
+\frac{a_i}{2^i} $, we have for $N\in \mathbb{N}^+$: $\sum_{i=0}^{N-1} 
+\frac{a_i}{2^i}\leq a$, hence $N\leq \|\sum_{i=0}^{N-1} 
+\phi(\frac{a_i}{2^i})\|\leq \|\phi(a)\|$, a bound for all natural numbers, impossible.
+Hence for positive elements, $\phi$ is bounded, overall boundedness follows from
+the first observation. In this argument we use that if $x\in A^+$ then 
+$x\leq \|x\|$, which may require us to work wih unitization.
+
+
+\section*{2)}
+
+Convexity: let $\mu\in (0,1)$,$\tau_1,\tau_2\in S(A)$ and $a\in A^+$, we have $\mu\tau_1(a)+(1-\mu)\tau_2(a)\geq 0$ since all this numbers are non-negative.
+
+Weakly closed: let $(\tau_\lambda)_\lambda$ be a converging net and $\tau$ it's limit, take $a\in A^+$, $\tau(a)=\lim_\lambda \tau_\lambda(a)\geq 0$, so that $\tau$ is
+positive. Take an approximate unity $(u_\beta)_\beta$, $\|\tau\|=\lim_\beta \tau(u_\beta)=\lim_\beta \lim_\lambda \tau_\lambda(u_\beta)=
+\lim_\lambda\lim_\beta\tau_\lambda(u_\beta)=\lim_\lambda 1=1$, so $\tau\in S(A)$.
+
+
+
+\section*{4)}
+
+Suppose $a$ is invertible, take $x\in A$, we can write $x=a a^{-1}x a^{-1}a$,
+so $x\in aAa$ and $A=aAa$.
+
+Now suppose $a$ is stricly positive, since $A=aAa$ we can find $x$ such that
+$\|1-axa\|<1$, hence $axa$ is invertible, this implies $a$ is invertible. 
+
+\section*{5)}
+
+Suppose $a$ does not have a dense range. Then there exists a finite dimensional
+subspace $V\in H$ with $V\cap \text{range} a=\{0\}$. Let $p$ be the orthogonal
+projection onto $V$, $p\in K(H)$, but if $x\in aAa$, then $\text{range} x\subseteq 
+\text{range} a $, therefore $p\notin aAa$ and $a$ is not strictly positive.
+We have shown $a$ strictly positive implies it have dense range.
+
+Now suppose $a$ has dense range. Since the rank 1 projections span $K(H)$, 
+we'll show that $x\otimes y \in aAa$. For $x,y\in H$ take sequences $(u_n)_n$
+$(v_n)_n$ such that $\lim_n a(u_n)=x, \lim_n a(v_n)=y$, this is possible since
+the range is dense.
+Notice that  for $z\in H$
+
+\begin{align*}
+    (x\otimes y)(z)=& \langle z,\lim_n a(v_n) \rangle \lim_n a(u_n)=\\
+    a (\langle az, \lim_n v_n \rangle \lim_n (u_n))=&\lim_n a(u_n\otimes v_n)a(z)\in aK(H)a
+\end{align*}
+
+so $K(H)\subseteq aK(H)a$ and $a$ is strictly positive.
+
+
+\section*{6)}
+
+Since our algebra is unital, $a$ being stricly positive implies it's invertible.
+Hence if $(\mathcal{H},\phi)$ is the universal representation, we have that $\phi(a)$ is
+invertible, in particular injective. 
+Let's assume by contradiction that there exists a positive functional
+ $\tau$ that $\tau(a)=0$, we can normalize it if needed and consider $\tau$
+ a state. 
+ Since $a$ is positive, there exists self adjoint and invertible  $b$ with $a=b^* b$,
+ so $\tau(b*b)=0$, which implies $\tau(bx)=0$ for all $x\in H$. In particular
+ the class of $b$ in the ideal $H/N_\tau$ is $0$. Take a non zero $u$ in 
+ the Hilbert space completion of $H/N_\tau$, and let $(y_\lambda)_\lambda \in 
+ \mathcal{H}$ with $y_\lambda=u $ if $\lambda=\tau$ and $0$ otherwise.
+ We have that $\phi(b)(y_\lambda)_\lambda=0$, a contradiction since $b$
+ is invertible and $\phi$ is a $*$-isomorphism. 
+ We have that for all positive functionals, $\tau(a)>0$.  
+
+
+ \section*{7)}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
+
+
+
+
+
+
+
